@@ -1,16 +1,24 @@
-DOCX to PDF Converter Web Application
-Project Overview
+## DOCX to PDF Converter Web Application
+# Project Overview
 This project provides a web-based solution to process Word documents (.docx) and convert them into PDF format. Users can upload .docx files, view file metadata, and download the generated PDFs. The application is built with a user-friendly interface, Dockerized for portability, and deployable on Kubernetes for scalability.
-Features
+# Features
 Upload .docx files for conversion to PDF.
+
 View file metadata (e.g., file size, creation date).
+
 Download the converted PDF files.
+
 Password protection for PDFs (bonus feature).
+
 Scalable architecture using Kubernetes.
+
 Fully containerized using Docker for easy deployment.
+
 CI/CD pipeline implemented with GitHub Actions for automated Docker builds.
+
 Comprehensive documentation and a working demonstration video included.
-Getting Started
+
+# Getting Started
 1. Prerequisites
 Python 3.9+
 Docker
