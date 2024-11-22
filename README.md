@@ -20,46 +20,73 @@ Comprehensive documentation and a working demonstration video included.
 
 # Getting Started
 1. Prerequisites
+   
 Python 3.9+
+
 Docker
+
 Kubernetes (kubectl recommended for local testing)
+
 Git
+
 2. Running the Application Locally
-Clone the repository:
-git clone https://github.com/<your-username>/docx-to-pdf.git
+   
+Clone the repository: git clone https://github.com/<your-username>/docx-to-pdf.git
+
 cd docx-to-pdf
-Install dependencies:
-pip install -r requirements.txt
-Run the Flask application:
-python app.py
+
+Install dependencies: pip install -r requirements.txt
+
+Run the Flask application: python app.py
+
 Access the application at http://localhost:5000.
+
 3. Running with Docker
-Build the Docker image:
-docker build -t docx-to-pdf .
-Run the container:
-docker run -p 5000:5000 docx-to-pdf
+   
+Build the Docker image: docker build -t docx-to-pdf .
+
+Run the container: docker run -p 5000:5000 docx-to-pdf
+
 4. Deploying on Kubernetes
+   
 Apply the deployment and service manifests:
+
 kubectl apply -f kubernetes/deployment.yml
+
 kubectl apply -f kubernetes/service.yml
-Forward the service port to access the application:
-kubectl port-forward service/docx-to-pdf-service 8080:80
+
+Forward the service port to access the application: kubectl port-forward service/docx-to-pdf-service 8080:80
+
 Access the application at http://localhost:8080.
+
 5. CI/CD Pipeline
-This project includes a GitHub Actions workflow for automated Docker builds and pushes to Docker Hub. The workflow is located in .github/workflows/docker-build.yml. Ensure you set the following GitHub repository secrets:
+   
+This project includes a **GitHub Actions workflow** for automated Docker builds and pushes to Docker Hub. The workflow is located in .github/workflows/docker-build.yml. Ensure you set the following GitHub repository secrets:
 
 DOCKER_USERNAME: Your Docker Hub username.
+
 DOCKER_PASSWORD: Your Docker Hub password.
 
-Additional Resources
+# Additional Resources
+
 Project Documentation: A comprehensive PDF document detailing the project is included in the repository (wordtopdf.pdf).
+
 Demonstration Video: Watch the application in action (docxtopdf.mp4).
-Future Enhancements
+
+# Future Enhancements
+
 Add support for batch file uploads and conversion.
+
 Enable user authentication for added security.
+
 Expand the metadata extraction for detailed reports.
+
 Implement advanced PDF customization options (e.g., watermarking).
-Contributors
+
+# Contributors
+
 Kashishsingla111
-License
+
+# License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
