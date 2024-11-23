@@ -31,7 +31,7 @@ Git
 
 2. Running the Application Locally
    
-Clone the repository: git clone https://github.com/<your-username>/docx-to-pdf.git
+Clone the repository: git clone https://github.com/kashishsingla111/docx-to-pdf.git
 
 cd docx-to-pdf
 
@@ -58,6 +58,10 @@ kubectl apply -f kubernetes/service.yml
 Forward the service port to access the application: kubectl port-forward service/docx-to-pdf-service 8080:80
 
 Access the application at http://localhost:8080.
+
+Access through local host: http://localhost/
+![image](https://github.com/user-attachments/assets/7f2fca0e-5a4e-455d-92df-e859994a9fe2)
+
 
 5. CI/CD Pipeline
    
